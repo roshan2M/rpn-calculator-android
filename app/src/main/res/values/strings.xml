@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">RPNCalculator</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Simple View</string>
+    <string name="title_notifications">Complex View</string>
+</resources>
