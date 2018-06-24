@@ -10,7 +10,7 @@ class Subtract : Expression {
         rightExpression = right
     }
 
-    override fun interpret(): Int {
+    override fun interpret(): Double {
         return leftExpression.interpret() - rightExpression.interpret()
     }
 

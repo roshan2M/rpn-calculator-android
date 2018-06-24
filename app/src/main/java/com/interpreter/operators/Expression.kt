@@ -2,6 +2,6 @@ package com.interpreter.operators
 
 interface Expression {
 
-    fun interpret(): Int
+    fun interpret(): Double
 
 }
