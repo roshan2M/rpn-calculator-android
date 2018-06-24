@@ -9,6 +9,7 @@ class CalculatorActivity : AppCompatActivity() {
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
+
         }
         false
     }

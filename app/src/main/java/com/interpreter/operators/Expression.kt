@@ -4,4 +4,6 @@ interface Expression {
 
     fun interpret(): Double
 
+    fun numberOfArguments(): Int
+
 }

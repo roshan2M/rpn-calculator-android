@@ -14,4 +14,8 @@ class Multiply : Expression {
         return leftExpression.interpret() * rightExpression.interpret()
     }
 
+    override fun numberOfArguments(): Int {
+        return 2
+    }
+
 }

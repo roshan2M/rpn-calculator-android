@@ -18,4 +18,8 @@ class Divide : Expression {
         return leftExpression.interpret() / denominator
     }
 
+    override fun numberOfArguments(): Int {
+        return 2
+    }
+
 }
