@@ -1,0 +1,17 @@
+package com.interpreter.operators
+
+class Add : Expression {
+
+    private lateinit var leftExpression: Expression
+    private lateinit var rightExpression: Expression
+
+    constructor(left: Expression, right: Expression) {
+        leftExpression = left
+        rightExpression = right
+    }
+
+    override fun interpret(): Int {
+        return leftExpression.interpret() + rightExpression.interpret()
+    }
+
+}
