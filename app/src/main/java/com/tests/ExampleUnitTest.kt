@@ -1,4 +1,4 @@
-package com.example.roshan.rpncalculator
+package com.tests
 
 import org.junit.Test
 
