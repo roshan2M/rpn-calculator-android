@@ -2,20 +2,16 @@ package com.interpreter.operators
 
 class Multiply : Expression {
 
-    private lateinit var leftExpression: Expression
-    private lateinit var rightExpression: Expression
+    private var leftValue: Double
+    private var rightValue: Double
 
-    constructor(left: Expression, right: Expression) {
-        leftExpression = left
-        rightExpression = right
+    constructor(left: Double, right: Double) {
+        this.leftValue = left
+        this.rightValue = right
     }
 
     override fun interpret(): Double {
-        return leftExpression.interpret() * rightExpression.interpret()
-    }
-
-    override fun numberOfArguments(): Int {
-        return 2
+        return this.rightValue * this.leftValue
     }
 
 }

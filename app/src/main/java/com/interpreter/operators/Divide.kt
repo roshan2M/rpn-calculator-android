@@ -2,24 +2,20 @@ package com.interpreter.operators
 
 class Divide : Expression {
 
-    private lateinit var leftExpression: Expression
-    private lateinit var rightExpression: Expression
+    private var leftValue: Double
+    private var rightValue: Double
 
-    constructor(left: Expression, right: Expression) {
-        leftExpression = left
-        rightExpression = right
+    constructor(left: Double, right: Double) {
+        this.leftValue = left
+        this.rightValue = right
     }
 
     override fun interpret(): Double {
-        var denominator: Double = rightExpression.interpret()
+        val denominator: Double = this.leftValue
         if (denominator == 0.0) {
-            throw Exception("Invalid division expression. Denominator must be non-zero.")
+            throw Exception("Invalid division. Cannot divide by 0.")
         }
-        return leftExpression.interpret() / denominator
-    }
-
-    override fun numberOfArguments(): Int {
-        return 2
+        return this.rightValue / denominator
     }
 
 }
